@@ -1,0 +1,244 @@
+/* https://flatuicolors.com/palette/es */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+
+/* 
+font-family: 'IBM Plex Sans Hebrew', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* DISPLAY NONE GENERICO */
+.d-none {
+  display: none;
+}
+
+.container {
+  position: relative;
+}
+
+.main-nav {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: #474787;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f7f1e3;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  height: 40px;
+}
+
+.logo-img img {
+  width: 40px;
+}
+
+.logo-img .identificador {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.time-day-middle {
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+}
+
+.log-in-out {
+  /* background-color: aqua; */
+  width: 12%;
+  height: 100%;
+  padding-right: 5px;
+}
+
+.log-in-out img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.menu-list-log-in-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-list-li {
+  cursor: pointer;
+}
+
+/* GRID LAYOUT BODY */
+.gridLayout {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.grid-menu-lateral {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.grid-body-info {
+  grid-area: 1 / 2 / 6 / 6;
+}
+
+/* BARRA LATERAL MENU */
+.menu-lateral {
+  position: fixed;
+  margin-top: 40px;
+  width: 200px;
+  background-color: #d1ccc0;
+  height: 100%;
+  box-shadow: 4px 1px 5px #8a8585;
+  z-index: 1;
+}
+
+.menu-ul-aside {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.menu-aside-li {
+  display: block;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  border-radius: 0px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 0px 10px 10px #a4a4a4, -10px 5px 10px #ffffff;
+  width: 100%;
+  margin-top: 1px;
+  margin-bottom: 0.2rem;
+  padding: 10px 20px;
+  color: #2c2c54;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-right: 5px ridge #d2caca;
+}
+.menu-aside-li:active {
+  box-shadow: 0px 10px 20px #f6f7f4, 0px 10px 20px #aeffc3;
+  outline: 0.5px ridge #000;
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+.active {
+  box-shadow: 0px 10px 20px #ffffff, 0px 10px 20px #ffffff;
+  outline: 0.5px ridge #000;
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+/* BODY - CONTROLE */
+.body-info {
+  position: sticky;
+  margin-top: 40px;
+  /* z-index: -1; */
+  padding: 10px;
+  height: 100%;
+  width: calc(100vw - 200px);
+  min-height: calc(100vh - 80px);
+  background-color: #d9eff89a;
+}
+/* Controle de Páginas */
+/* LOGIN  */
+.homepageLogin {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #ffffff; */
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+.logo-homepage {
+  width: 300px;
+  height: 120px;
+  overflow: hidden;
+}
+.logo-homepage img {
+  width: 100%;
+  height: 100%;
+}
+.message {
+  font-size: 2rem;
+  color: #40407a;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #0003c2;
+  font-family: "IBM Plex Sans Hebrew", sans-serif;
+  font-weight: 800;
+}
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+ 
+  width: 320px;
+  height: 250px;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #3a3636b6;
+}
+.formLogin label {
+  color: #0004dd;
+  letter-spacing: 0.1rem;
+}
+.formLogin input {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: .5rem;
+  border: none;
+  outline: none;
+  background-color: #cacaca;
+}
+.formLogin .btn-submit{
+  color: #fff;
+  background-color: #363aff;
+  cursor: pointer;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background-color 0.5s;
+
+}
+.formLogin .btn-submit:hover{
+ background-color: #358614 ;
+}
+.homepageLogin a{
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #810000;
+  letter-spacing: 0.3rem;
+  font-family: monospace;
+}
+.homepageLogin a:hover{
+  background-color: #40407a;
+  color: white;
+}
