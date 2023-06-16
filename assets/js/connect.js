@@ -1,16 +1,45 @@
-let btnCadastro = document.querySelector(".btn-submit");
-btnCadastro.addEventListener("click", (e) => {
-  e.preventDefault();
-  let emailUser = document.querySelector("#email").value;
-  let passUser = document.querySelector("#password").value;
+try {
+  const btnLoginSystem = document.querySelector(".btn-submit");
+  btnLoginSystem.addEventListener("click", (e) => {
 
-  consoleUser(emailUser,passUser);
-});
-
-function consoleUser(em,ps){
-console.log(em,ps)
+    e.preventDefault();
+    let emailUser = document.querySelector("#email").value;
+    let passUser = document.querySelector("#password").value;
+    console.log(emailUser, passUser);
+    carregarPagina('newsAbout')
+  });
+ 
+} catch (error) {
+ console.error(error)
 }
 
 
+//login/password
+// murilomass
+// 123456*
+
+//
 
 
+// // Create a MongoClient with a MongoClientOptions object to set the Stable API version
+// const client = new MongoClient(uri, {
+//   serverApi: {
+//     version: ServerApiVersion.v1,
+//     strict: true,
+//     deprecationErrors: true,
+//   }
+// });
+
+// async function run() {
+//   try {
+//     // Connect the client to the server	(optional starting in v4.7)
+//     await client.connect();
+//     // Send a ping to confirm a successful connection
+//     await client.db("admin").command({ ping: 1 });
+//     console.log("Pinged your deployment. You successfully connected to MongoDB!");
+//   } finally {
+//     // Ensures that the client will close when you finish/error
+//     await client.close();
+//   }
+// }
+// run().catch(console.dir);

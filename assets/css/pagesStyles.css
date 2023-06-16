@@ -29,22 +29,22 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 20px;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-
   width: 320px;
-  height: 250px;
+  height: 280px;
   border-radius: 1rem;
   box-shadow: 0 0 10px #3a3636b6;
 }
 .formLogin label {
   color: #0004dd;
   letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
 }
-.formLogin input {
+#email, #password {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
@@ -52,18 +52,26 @@
   border: none;
   outline: none;
   background-color: #cacaca;
+  box-shadow: 0 0 3px #000;
 }
-.formLogin .btn-submit {
+#email:focus, #password:focus{
+  box-shadow: inset 0 0 15px #001eff42;
+}
+.btn-submit {
+  border-radius:0.5rem;
+  padding: 1.5rem 0.5rem;
+  border: none;
   color: #fff;
   background-color: #363aff;
   cursor: pointer;
-  padding: 20px;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
   transition: background-color 0.5s;
+  box-shadow: 0 0 3px #000;
 }
-.formLogin .btn-submit:hover {
+.btn-submit:hover {
   background-color: #358614;
 }
 .homepageLogin a {
